@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Onest";
+  src: url("src\fonts\Onest\TTF\Onest-Bold.ttf") format("ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("src\fonts\Onest\TTF\Onest-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("src\fonts\Onest\TTF\Onest-Bold.ttf") format("ttf");
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+.quiz-body {
+  margin: 0 64px;
+  position: relative;
+}
+
+.quiz-container {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.quiz-container__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  padding: 32px;
+  background: #CAFFA0;
+  border-radius: 24px;
+}
+
+.quiz-container__section {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.quiz-container__section-header {
+  margin: 0;
+  font-family: "Onest", "Arial", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  color: #383838;
+}
+
+.quiz-container__section-description {
+  font-family: "Onest", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 70%;
+}
+
+.quiz-container__section-img {
+  margin-top: auto;
+}
+
+.quiz-container__step {
+  background: #FFFFFF;
+  border-radius: 24px;
+  width: 576px;
+  height: 392px;
+}
+
+.quiz-step__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fill-available;
+  padding: 32px;
+}
+
+.quiz-step__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #9B9B9B;
+}
+
+.quiz-step__question-header {
+  margin: 0;
+  font-family: "Onest", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383838;
+}
+
+.quiz-step__answer-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  height: inherit;
+  margin: 24px 0 56px;
+}
+.click-area {
+  width: 100%;
+}
+
+.quiz-form_radio {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  font-family: "Onest", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383838;
+}
+
+.quiz-form_radio:hover {
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  padding: 7px 15px;
+}
+
+.quiz-form_radio input[type=radio] {
+  display: none;
+}
+
+.custom-radio-btn {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #F5F5F5;
+  border: 1px solid #D8D8D8;
+  border-radius: 50%;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
+.custom-radio-btn::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 6px solid #383838;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+}
+
+.quiz-form_radio input[type=radio]:checked + .custom-radio-btn::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.quiz-step__question-number {
+  display: flex;
+}
+
+.quiz-step__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  align-items: center;
+}
+
+.next-step-btn {
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #383838;
+  color: #FFFFFF;
+  font-family: "Onest", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.next-step__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.previous-step-btn {
+  margin-right: auto;
+  padding: 12px 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  background: #FFFFFF ;
+  color: #383838;
+  font-family: "Onest", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.previous-step__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}

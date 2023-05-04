@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="quiz-body">
+    <main class="quiz-container">
+      <div class="quiz-container__wrapper">
+        <section class="quiz-container__section">
+          <h1 class="quiz-container__section-header">
+            Подберём вуз мечты
+          </h1>
+          <p class="quiz-container__section-description">
+            Ответьте на 8 простых вопросов, и мы составим
+            список наиболее подходящих для вас вузов
+          </p>
+          <div class="quiz-container__section-img">
+            <img src="images/quiz-img.png" alt="Подберём бесплатно за 30 секунд">
+          </div>
+        </section>
+
+        <form class="quiz-container__step" method="post">
+          <article class="quiz-step__wrapper">
+            <section class="quiz-step__question">
+              <h2 class="quiz-step__question-header">
+                Для кого вы ищите учебное заведение?
+              </h2>
+              <div class="quiz-step__question-number">
+                <span class="step-number-header">Шаг &nbsp;</span>
+                <span class="current-step">1</span>
+                <span class="total-steps">/9</span>
+              </div>
+            </section>
+            <section class="quiz-step__answer-block">
+              <div class="quiz-form_radio">
+                <label class="click-area" for="radio-1">Себе</label>
+                <input id="radio-1" type="radio" name="radio" value="yourself"/>
+                <span class="custom-radio-btn"></span>
+              </div>
+              <div class="quiz-form_radio">
+                <label class="click-area" for="radio-2">Супругу/супруге</label>
+                <input id="radio-2" type="radio" name="radio" value="spouse"/>
+                <span class="custom-radio-btn"></span>
+              </div>
+              <div class="quiz-form_radio">
+                <label class="click-area" for="radio-3">Родственнику</label>
+                <input id="radio-3" type="radio" name="radio" value="relative"/>
+                <span class="custom-radio-btn"></span>
+              </div>
+              <div class="quiz-form_radio">
+                <label class="click-area" for="radio-4">Коллеге</label>
+                <input id="radio-4" type="radio" name="radio" value="colleague"/>
+                <span class="custom-radio-btn"></span>
+              </div>
+              <div class="quiz-form_radio">
+                <label class="click-area" for="radio-5">Ребенку</label>
+                <input id="radio-5" type="radio" name="radio" value="kid"/>
+                <span class="custom-radio-btn"></span>
+              </div>
+              <div class="quiz-form_radio">
+                <label class="click-area" for="radio-6">Другое</label>
+                <input id="radio-6" type="radio" name="radio" value="other"/>
+                <span class="custom-radio-btn"></span>
+              </div>
+            </section>
+            <footer class="quiz-step__footer">
+              <a href="#" class="previous-step-btn hidden" area-disabled>
+                <div class="previous-step__wrapper">
+                  <img src="images/previous-img.png" alt="Предыдущий шаг">
+                  <span>Назад</span>
+                </div>
+              </a>
+              <a class="next-step-btn" href="#">
+                <div class="next-step__wrapper">
+                  <span>Далее</span>
+                  <img src="images/next-img.png" alt="Следующий шаг">
+                </div>
+              </a>
+            </footer>
+          </article>
+        </form>
+      </div>
+    </main>
+    <script async src="./bundle.js"></script> 
+  </body>
+
+</html>
